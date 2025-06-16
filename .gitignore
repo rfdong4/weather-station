@@ -1,2 +1,4 @@
 weather-station/main/certs
 build/
+esp-idf/
+weather-station/sdkconfig.defaults
