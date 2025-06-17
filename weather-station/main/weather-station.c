@@ -27,6 +27,7 @@
 #include "driver/i2c_master.h"
 
 #include "mqtt_client.h"
+#include <math.h>
 /* Constants that aren't configurable in menuconfig */
 #define WEB_SERVER "10.0.0.195"
 #define WEB_PORT "8000"
@@ -248,8 +249,8 @@ void publisher_task(void *pvParameters) {
         
 
         cJSON *root = cJSON_CreateObject();
-        cJSON_AddNumberToObject(root, "temperature", t);
-        cJSON_AddNumberToObject(root, "humidity", h);
+        cJSON_AddNumberToObject(root, "temperature", round(t));
+        cJSON_AddNumberToObject(root, "humidity", round(h));
         cJSON_AddStringToObject(root, "deviceID", AWS_IOT_CLIENT_ID);
 
         char *json_payload = cJSON_PrintUnformatted(root);
