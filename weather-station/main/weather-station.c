@@ -250,7 +250,7 @@ void publisher_task(void *pvParameters) {
         cJSON *root = cJSON_CreateObject();
         cJSON_AddNumberToObject(root, "temperature", t);
         cJSON_AddNumberToObject(root, "humidity", h);
-        cJSON_AddStringToObject(root, "deviceId", AWS_IOT_CLIENT_ID);
+        cJSON_AddStringToObject(root, "deviceID", AWS_IOT_CLIENT_ID);
 
         char *json_payload = cJSON_PrintUnformatted(root);
 
