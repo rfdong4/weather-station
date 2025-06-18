@@ -1,3 +1,8 @@
+![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=flat&logo=amazon-aws&logoColor=white)
+![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=flat&logo=Arduino&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54)
+![DynamoDB](https://img.shields.io/badge/Amazon%20DynamoDB-4053D6?style=flat&logo=Amazon%20DynamoDB&logoColor=white)
+
 # ESP32-C3 Weather Station with AWS IoT Analytics
 
 A comprehensive IoT weather monitoring system that collects sensor data from an ESP32-C3 microcontroller and processes it through AWS cloud services for real-time analytics and anomaly detection.
